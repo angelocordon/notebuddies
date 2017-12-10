@@ -1,5 +1,10 @@
 <section class="section">
   <div class="container">
-    <h1 class="title">Hello World</h1>
+    <h1 class="title">List of Videos</h1>
+    <ul>
+      <% @videos.each do |video| %>
+        <li><%= link_to video.title, video %></li>
+      <% end %>
+    </ul>
   </div>
 </section>
