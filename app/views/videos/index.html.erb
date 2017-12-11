@@ -3,7 +3,7 @@
     <h1 class="title">List of Videos</h1>
     <ul>
       <% @videos.each do |video| %>
-        <li><%= link_to video.title, video %></li>
+        <li><%= link_to video.title, video_path(video) %></li>
       <% end %>
     </ul>
   </div>
