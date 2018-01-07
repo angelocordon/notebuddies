@@ -9,58 +9,13 @@
   </head>
   <body>
     <section class="hero is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <%= link_to "Notebuddies",
-                    root_path,
-                    class: "navbar-item" %>
-              <span class="navbar-burger burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item">
-                  Search
-                </a>
-                <a class="navbar-item">
-                  Your Notes
-                </a>
-                <a class="navbar-item">Sign In</a>
-                <a class="navbar-item">Sign Up</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-
+      <%= render "shared/navbar" %>
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <%# yield %>
-          <h1 class="title">
-            Title
-          </h1>
-          <h2 class="subtitle">
-            Subtitle
-          </h2>
+        <div class="container">
+          <%= yield %>
         </div>
       </div>
-
-      <div class="hero-foot">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-menu">
-              <div class="navbar-start is-size-7">
-                <a class="navbar-item">About</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <%= render "shared/footer" %>
     </section>
   </body>
 </html>

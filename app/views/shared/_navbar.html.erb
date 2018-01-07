@@ -1,12 +1,29 @@
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <%= link_to 'NoteBudddies', root_path, class: 'navbar-item' %>
-      <button class="button navbar-burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<div class="hero-head">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <%= link_to "Notebuddies",
+              root_path,
+              class: "navbar-item" %>
+        <span class="navbar-burger burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">
+            Search Videos
+          </a>
+          <% if 1 == 2 %>
+            <a class="navbar-item">Your Notes</a>
+          <% else %>
+            <a class="navbar-item">Sign In</a>
+            <a class="navbar-item">Sign Up</a>
+          <% end %>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
