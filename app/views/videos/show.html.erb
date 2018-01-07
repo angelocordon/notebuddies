@@ -1,11 +1,22 @@
-<section class="section">
-  <div class="columns">
-    <div class="column">
-      <h1 class="title"><%= @video.title %></h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @video.youtube_id %>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="column">
-      <!-- Notes -->
-    </div>
+<div class="columns">
+  <div class="column">
+    <p class="title is-3"><%= @video.title %></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @video.youtube_id %>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
-</section>
+  <div class="column">
+    <form>
+      <div class="field">
+        <label class="label">Notes</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <button class="button is-link">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
